@@ -1,756 +1,599 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Architecture Design</title>
-    <link rel="stylesheet" href="styles.css" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Nokora:wght@100;300;400;700;900&display=swap");
-    </style>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <div class="logo">
-          <img src="logo.jpeg" alt="Uniq Design Studio Logo" />
-        </div>
-        <ul class="nav-links">
-          <li><a href="#services">SERVICES</a></li>
-          <li><a href="#portfolio">PORTFOLIO</a></li>
-          <li><a href="#expertise">EXPERTISE</a></li>
-          <li><a href="#gallery">GALLERY</a></li>
-          <li><a href="#about">ABOUTUS</a></li>
-        </ul>
-        <a href="#contact" class="btn-contact">CONTACT US</a>
-      </nav>
-      <div class="header-content">
-        <h1>ARCHITECTURE</h1>
-        <p class="tagline">
-          A Cozy Corner, Where Every Detail Whispers Comfort
-        </p>
-      </div>
 
-      <div class="small-rectangles">
-        <div class="rectangle-item"></div>
-        <div class="rectangle-item"></div>
-        <div class="rectangle-item"></div>
-        <div class="rectangle-item"></div>
-      </div>
-    </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nokora:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+</head>
 
-    <section class="experience-section">
-      <div style="display: flex">
-        <div class="experience-content">
-          <h2>
-            <span class="highlight"><img src="Group 34.jpg" alt="20+" /></span>
-            <span class="highligh-exp"
-              ><img src="Experience.jpg" alt="Experience"
-            /></span>
-          </h2>
-          <p style="margin-top: -130px">
-            Experiencing Architecture And Interiors Is Like Stepping Into A
-            Carefully Crafted World Where Every Detail Tells A Story. It’s About
-            Feeling The Harmony Of Design, Delighting In Sensory Experiences,
-            And Being Emotionally Moved By The Space Around You. Whether It’s
-            The Functionality Of A Well-Planned Layout Or The Cultural Richness
-            Reflected In The Décor, Each Interaction Offers A Unique And
-            Meaningful Journey Of Exploration And Discovery.
-          </p>
-        </div>
-        <div
-          style="margin-bottom: 600px; margin-left: 75px"
-          class="experience-images"
-        >
-          <div class="image-wrapper">
-            <img
-              src="with 'one sino park', aoe architects brings back cavernous and fragmented deconstructivism 2.jpg"
-              alt="Architecture"
-            />
-          </div>
-          <div class="image-wrapper">
-            <img
-              style="margin-top: 90px; margin-left: 30px"
-              src="home luxury kitchen design attractive ideas 2.jpg"
-              alt="Interior Design"
-            />
-          </div>
-        </div>
-      </div>
-      <div style="margin-top: -205px" class="specialization">
-        <h2>OUR SPECIALIZATION</h2>
-        <div style="margin-top: -50px" class="specialization-items">
-          <div class="specialization-item">
-            <img
-              style="margin-left: 50px"
-              src="interior-design_2400622 1.jpg"
-              alt="Interior Design"
-            />
-            <p style="margin-left: 50px">INTERIOR DESIGN</p>
-          </div>
-          <div class="specialization-item">
-            <img
-              style="margin-left: 230px"
-              src="furniture_9990499 1.jpg"
-              alt="Furniture"
-            />
-            <p style="margin-left: 230px">FURNITURE</p>
-          </div>
-        </div>
-      </div>
-    </section>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./Logo/2.0 MAIN 2 1 2.svg" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <!-- <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link font-bold-15" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-bold-15" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-bold-15" href="#">Expertise</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-bold-15" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-bold-15" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-bold-15 bg-primary-col px-3 border-20 " href="#">Contact Us</a>
+                    </li>
 
-    <div class="services-section">
-      <div>
-        <h2 class="portfolio-title1">
-          WHAT WE DO
-          <span
-            class="portfolio-highlight1"
-            style="display: inline-block; position: relative; top: 10px"
-            >SERVICES</span
-          >
-        </h2>
-      </div>
-      <!-- Cards Container -->
-      <div class="cards-container">
-        <!-- Interiors Card -->
-        <div class="card" style="position: relative">
-          <div
-            class="card-image"
-            style="background-image: url('bed.jpg')"
-          ></div>
-          <div
-            class="card-title"
-            style="
-              margin-bottom: 250px;
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-            "
-          >
-            ARCHITECTURE
-          </div>
+                </ul>
+            </div>
         </div>
-        <div class="card" style="position: relative">
-          <div
-            class="card-image"
-            style="background-image: url('bed.jpg')"
-          ></div>
-          <div
-            class="card-title"
-            style="
-              margin-bottom: 250px;
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-            "
-          >
-            INTERIORS
-          </div>
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/Slide-1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/Slide-2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the Second slide.</p>
+                </div>
+            </div>
         </div>
 
-        <!-- Furniture Card -->
-        <div class="card" style="position: relative">
-          <div
-            class="card-image"
-            style="background-image: url('bed.jpg')"
-          ></div>
-          <div
-            class="card-title"
-            style="
-              margin-bottom: 250px;
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-            "
-          >
-            FURNITURE
-          </div>
-        </div>
-
-        <!-- Decors Card -->
-        <div class="card decors-card position-relative">
-          <div
-            class="card-image1"
-            style="background-image: url('Decore.jpg')"
-          ></div>
-          <div
-            class="card-title"
-            style="
-              margin-bottom: 250px;
-              position: absolute;
-              top: 30%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-            "
-          >
-            DECORS
-          </div>
-          <p
-            class="card-description"
-            style="
-              margin-bottom: 250px;
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-            "
-          >
-            Decorations are elements used to enhance the appearance or ambiance
-            of a space.
-          </p>
-          <a
-            href="#"
-            class="see-more"
-            style="
-              margin-bottom: 250px;
-              position: absolute;
-              top: 70%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-            "
-            >SEE MORE &#x2192;</a
-          >
-        </div>
-      </div>
     </div>
 
-    <div class="portfolio-section">
-      <div>
-        <h2 class="portfolio-title">
-          OUR PROJECTS
-          <span
-            class="portfolio-highlight"
-            style="display: inline-block; position: relative; top: 10px"
-            >PORTFOLIO</span
-          >
-        </h2>
-      </div>
-      <!-- Filter Buttons -->
-      <div class="filter-buttons">
-        <button class="filter-button active" style="text-decoration: none">
-          ALL
-        </button>
-        <button class="filter-button" style="opacity: 0.5">RESIDENTIAL</button>
-        <button class="filter-button" style="opacity: 0.5">COMMERCIAL</button>
-        <button class="filter-button" style="opacity: 0.5">DESIGNS</button>
-        <div style="margin-left: 600px">
-          <img src="Line 110.jpg" alt="" />
-        </div>
-      </div>
-
-      <!-- Image Grid -->
-      <div class="image-grid" style="display: flex; flex-direction: row">
-        <div>
-          <img src="img1.jpg" alt="Image 1" />
-        </div>
-        <div style="display: flex; flex-direction: column">
-          <img src="car.jpg" alt="" />
-          <img src="bed.jpg" style="margin-top: 30px" alt="" />
-        </div>
-        <div style="display: flex; flex-direction: column; gap: 30px">
-          <img src="modern.jpg" alt="" />
-
-          <img src="what.jpg" alt="" />
-          <img src="sofa (1).jpg" alt="" />
-        </div>
-        <div style="display: flex; flex-direction: column; gap: 25px">
-          <img src="front.jpg" alt="" />
-          <img src="download.jpg" alt="" />
-        </div>
-      </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
     </div>
-
-    <div class="facts-section">
-      <div style="display: flex; flex-direction: column">
-        <div class="facts-title">
-          <span class="interesting-facts">INTERESTING FACTS</span>
-          <span class="success">SUCCESS</span>
-        </div>
-        <div style="margin-left: 0px">
-          <img
-            class="Line"
-            style="
-              border: 1px solid rgba(255, 255, 255, 1);
-              margin-bottom: 20px;
-              margin-right: 120px;
-            "
-            src="Line 110.jpg"
-            alt=""
-          />
-        </div>
-      </div>
-
-      <div class="facts-content">
-        <div class="fact" style="display: flex; flex-direction: row">
-          <span class="fact-number">24</span>
-          <span
-            class="fact-label"
-            style="
-              margin-top: 20px;
-              margin-left: 10px;
-              font-size: 16px;
-              font-weight: 400;
-            "
-            >EXPERIENCE</span
-          >
-        </div>
-        <div class="fact" style="display: flex; flex-direction: row">
-          <span class="fact-number">323</span>
-          <span
-            class="fact-label"
-            style="
-              margin-top: 20px;
-              margin-left: 10px;
-              font-size: 16px;
-              font-weight: 400;
-            "
-            >PROJECTS</span
-          >
-        </div>
-        <div class="fact" style="display: flex; flex-direction: row">
-          <span class="fact-number">15</span>
-          <span
-            class="fact-label"
-            style="
-              margin-top: 20px;
-              margin-left: 10px;
-              font-size: 16px;
-              font-weight: 400;
-            "
-            >ONGOING PROJECTS</span
-          >
-        </div>
-        <div class="fact" style="display: flex; flex-direction: row">
-          <span class="fact-number">43</span>
-          <span
-            class="fact-label"
-            style="
-              margin-top: 20px;
-              margin-left: 10px;
-              font-size: 16px;
-              font-weight: 400;
-            "
-            >PARTNERS</span
-          >
-        </div>
-      </div>
     </div>
-
-    <section class="team-expertise">
-      <div class="team-title" style="background-color: rgb(235, 242, 254); padding-top: 20px; ">
-        <h2
-         
-        >
-          OUR TEAM <span style="font-size: 70px;   ">EXPERTISE</span>
-        </h2>
-      </div>
-      <div class="team-content" style="display: flex; flex-direction: row">
-        <div style="display: flex; flex-direction: column; margin-left:40px">
-          <div class="team-member">
-            <img src="Rectangle 530.jpg" alt="Francis" />
-            <h3>FRANSIS</h3>
-            <p class="role">Sr. Architecture</p>
-          </div>
-          <div class="team-member" style="margin-top: 30px">
-            <img src="Rectangle 531.jpg" alt="Andrew" />
-            <h3>ANDREW</h3>
-            <p class="role">Managing Director</p>
-          </div>
-        </div>
-        <div class="team-member" style="margin-top: 170px; margin-right: 300px">
-          <img src="Rectangle 532.jpg" alt="Nessy" />
-          <h3>NESSY</h3>
-          <p class="role">Designer</p>
-        </div>
-        <div
-          class="team-description"
-          style="
-            margin-top: 100px;
-            font-weight: 700;
-            font-size: 20px;
-            line-height: 60px;
-            width: 660px;
-            height: 240px;
-            top: 207px;
-            left: 721px;
-            gap: 0px;
-            opacity: 0px;
-          "
-        >
-          <p>
-            MEET OUR TEAM IN PERSON AND EXPERIENCE THE DIFFERENCE THEY CAN MAKE
-            IN BRINGING YOUR VISION TO LIFE. WE'RE HERE TO TURN YOUR DREAMS INTO
-            REALITY WITH PASSION, PROFESSIONALISM, AND EXPERTISE.
-          </p>
-          <a href="#" class="see-more">SEE MORE</a>
-        </div>
-      </div>
-    </section>
-
-
-   
-
-
     <section>
-        <div style="background: rgba(36, 36, 36, 0.06); ;
-">
-        <h2 style="
-        display: flex;
-        align-items: center;
-        gap: 10px; /* Adjust gap between the texts */
-        font-family: Nokora;
-        font-size: 24px;
-        font-weight: 900;
-        margin-left: 20px;
-        margin-top: 10px;
-        padding-top: 20px;
-        ">
-      WHO WE ARE <span style="font-size: 70px;color: rgba(18, 54, 106, 0.35);
-">COMPANY</span>
-    </h2>
-</div>
-  </div>
-        <div class="content-container" >
-            <div class="image-container">
-                <img src="Planos de casa 1.jpg" alt="Architecture Sketch">
-            </div>
-            <div class="text-container">
-                <p class="main-description" style="width: 774px;
-                height: 111px;
-                top: 4812px;
-                left: 639px;
-                gap: 0px;
-                opacity: 0px;
-                font-family: Nokora;
-font-size: 18px;
-font-weight: 400;
-line-height: 36.54px;
-text-align: left;
-padding-top: 25px;
-padding-left: 12px;
-">
-                    Apparently We Had Reached A Great Height In The Atmosphere, For The Sky Was A Dead Black And The Stars Had Ceased To Twinkle. By The Same Illusion Which Lifts The Horizon Of The Sea To The Level Of The Spectator On A Hillside
-                </p>
-                <div class="info-columns"style="display:flex; " >
-                    <div style="margin-top: 20px; margin-left: 12px;">
-                    <div class="info-box">
-                        <h3 style="color: rgba(30, 85, 135, 1);
-">Creativity</h3>
-                        <p style="width: 344px;
-                        height: 90px;
-                        top: 5025px;
-                        left: 639px;
-                        gap: 0px;
-                        opacity: 0px;
-                        width: 344px;
-height: 90px;
-top: 5025px;
-left: 639px;
-gap: 0px;
-opacity: 0px;
-margin-top:10px;
-line-height: 22.4px;
-                        ">Apparently We Had Reached A Great Height In The Atmosphere, For The Sky Was A Dead Black And The Stars Had Ceased To Twinkle.</p>
-                    </div>
-                    <div class="info-box">
-                        <h3 style="color: rgba(30, 85, 135, 1);">Point Of View</h3>
-                        <p style="width: 344px;
-                        height: 90px;
-                        top: 5025px;
-                        left: 639px;
-                        gap: 0px;
-                        opacity: 0px;
-                        width: 344px;
-height: 90px;
-top: 5025px;
-left: 639px;
-gap: 0px;
-opacity: 0px;
-margin-top:10px;
-line-height: 22.4px;">Apparently We Had Reached A Great Height In The Atmosphere, For The Sky Was A Dead Black And The Stars Had Ceased To Twinkle.</p>
-                    </div>
-                    </div>
-                    <div style="margin-top: 20px; margin-right: 200px;">
-                    <div class="info-box">
-                        <h3 style="color: rgba(30, 85, 135, 1);">Innovation</h3>
-                        <p style="width: 344px;
-                        height: 90px;
-                        top: 5025px;
-                        left: 639px;
-                        gap: 0px;
-                        opacity: 0px;
-                        width: 344px;
-height: 90px;
-top: 5025px;
-left: 639px;
-gap: 0px;
-opacity: 0px;
-margin-top:10px;
-line-height: 22.4px;">Apparently We Had Reached A Great Height In The Atmosphere, For The Sky Was A Dead Black And The Stars Had Ceased To Twinkle.</p>
-                    </div>
-                    <div class="info-box">
-                        <h3 style="color: rgba(30, 85, 135, 1);">Mission & Vision</h3>
-                        <p style="width: 344px;
-                        height: 90px;
-                        top: 5025px;
-                        left: 639px;
-                        gap: 0px;
-                        opacity: 0px;
-                        width: 344px;
-height: 90px;
-top: 5025px;
-left: 639px;
-gap: 0px;
-opacity: 0px;
-margin-top:10px;
-line-height: 22.4px;">Apparently We Had Reached A Great Height In The Atmosphere, For The Sky Was A Dead Black And The Stars Had Ceased To Twinkle.</p>
+        <div class="container-fluid"></div>
+        <div class="row">
+            <div class="col my-auto">
+                <div class="row">
+                    <!-- <div class="col">
+                            <img class="img-fluid" src="./img/Section-2-1.png" alt="">
+                        </div> -->
+                    <div class="col">
+                        <h1 class="font-black-40 font-col-lblue">EXPERIENCE</h1>
                     </div>
                 </div>
+                <p class="font-regular-15 py-3 ">Experiencing interiors is like stepping into a carefully crafted world
+                    where every detail tells a story. It's about feeling the harmony of design, delighting in
+                    sensory experiences, and being emotionally moved by the space around you. Whether
+                    it's the functionality of a well-planned layout or the cultural richness reflected in the
+                    decor, each interaction offers a unique and meaningful journey of exploration and
+                    discovery.</p>
+                <h2 class="font-black-25 font-col-grey py-3">
+                    Our Specialization
+                </h2>
+                <div class="row">
+                    <div class="col text-center">
+                        <img class="img-fluid" src="./img/specialization-2.png" alt="">
+                        <p class="font-bold-15 py-2">INTERIOR DESIGN</p>
+                    </div>
+                    <div class="col text-center">
+                        <img class="" src="./img/Furniture.png" alt="">
+                        <p class="font-bold-15 py-2">
+                            FURNITURES
+                        </p>
+                    </div>
+                    <div class="col text-center">
+                        <img class="img-fluid" src="./img/Furnishing-1.png" alt="">
+                        <p class="font-bold-15 py-2">
+                            FURNISHING
+                        </p>
+                    </div>
+                    <div class="col text-center">
+                        <img class="img-fluid" src="./img/Decors 1.png" alt="">
+                        <p class="font-bold-15 py-2">
+                            DECORS
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div style="display: flex; flex-direction: row; margin-top: -28px; width: 100%; ">
-        <div class="stats-section" style="margin-top: 80px;">
-            <div class="stats">
-                <span class="number">323</span>
-                <span>PROJECTS</span>
-            </div>
-            <div class="stats">
-                <span class="number">15</span>
-                <span>ONGOING</span>
-            </div>
-            <div class="stats">
-                <span class="number">43</span>
-                <span>PARTNERS</span>
+            <div class="col d-flex justify-content-end">
+                <img class="img-fluid" src="./img/Section-2-2.png" alt="">
             </div>
         </div>
-        <div class="quote-section" style="margin-left: 45px; height: 160px; width: 67%; background-color: rgba(2, 48, 91, 0.82);
-;">        
-            <p style="width: 750px;
-            height: 112px;
-            top: 5358px;
-            left: 658px;
-            gap: 0px;
-            opacity: 0px;
-            font-family: Montagu Slab;
-font-size: 24px;
-font-weight: 500;
-line-height: 56.4px;
-text-align: center;
-">DISCOVER THE ESSENCE OF DESIGN EXCELLENCE AT THE ULTIMATE DESTINATION</p>
+        </div>
+    </section>
 
-            <div class="quote-icon"><p style="font-size:xx-large;">“ ”</p></div>
+
+    <div class="section-3 py-3 bg-col-grey">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col ">
+                    <p class="text-end my-auto font-bold-15">what we do</p>
+                </div>
+                <div class="col">
+                    <h2 class="font-black-40 font-col-lblue">services</h2>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="section-4 ">
+        <div class="container my-5">
+            <div class="row">
+                <div class="col">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="./img/services-1.jpg" alt="Avatar" style="width:300px;height:400px;">
+                            </div>
+                            <div class="flip-card-back">
+                                <h1>John Doe</h1>
+                                <p>Architect & Engineer</p>
+                                <p>We love that guy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="./img/services-1.jpg" alt="Avatar" style="width:300px;height:400px;">
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="container my-auto">
+                                    <h1>John Doe</h1>
+                                    <p>Architect & Engineer</p>
+                                    <p>We love that guy</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="./img/services-1.jpg" alt="Avatar" style="width:300px;height:400px;">
+                            </div>
+                            <div class="flip-card-back">
+                                <h1>John Doe</h1>
+                                <p>Architect & Engineer</p>
+                                <p>We love that guy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    </section>
-
-
-
-
-    <section class="how-it-works">
-        <div class="section-title">
-            <h2 style=" display: flex;
-            align-items: center;
-            gap: 10px; /* Adjust gap between the texts */
-            font-family: Nokora;
-            font-size: 24px;
-            font-weight: 900;
-            margin-left: 20px;
-            margin-top: 10px;">
-                HOW IT WORKS <span class="highlight" style="color: rgba(18, 54, 106, 0.35);
-">PROCESS</span>
-            </h2>
-        </div>
-        <div style="margin-top: -22px; margin-bottom: 40px; width: 50%;">
-            <img src="Line 110.jpg" alt="" />
-        </div>
-        <div class="steps-container">
-            <div class="step">
-                <div class="step-image">
-                    <img src="sales-manager-consulting-client-talking-phone-office-marketing-making-offer-selling-near-laptop-serious-business-man-call-130677314 1.jpg" alt="Step 1 Image">
+    <div class="section-5 py-3 bg-col-grey">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-3">
+                    <p class="text-end">Our projects</p>
                 </div>
-                <div class="step-text" style="margin-left:70px">
-                    <h3>STEP-1</h3>
-                    <h4>RAISE A REQUEST</h4>
-                    <p>RAISE A HOUSE CONSTRUCTION SERVICE REQUEST OR CALL US AT +91 7505 205 205. OUR TEAM WILL GET IN TOUCH WITH YOU TO UNDERSTAND YOUR REQUIREMENTS IN MORE DETAIL.</p>
-                </div>
-            </div>
-            <div class="step" style="margin-left:600px">
-                <div class="step-image">
-                    <img src="ThinkstockPhotos-158519569_1 1.jpg" alt="Step 2 Image">
-                </div>
-                <div class="step-text" style="margin-left:70px">
-                    <h3>STEP-2</h3>
-                    <h4>MEET OUR EXPERT</h4>
-                    <p>EXPERTS WILL GUIDE YOU IN SELECTING THE RIGHT PACKAGE FOR HOUSE CONSTRUCTION AND SOLVE ANY QUERIES THAT YOU MAY HAVE.</p>
-                </div>
-            </div>
-            <div class="step" >
-                <div class="step-image">
-                    <img src="120689 1.jpg" alt="Step 3 Image">
-                </div>
-                <div class="step-text" style="margin-left:70px">
-                    <h3>STEP-3</h3>
-                    <h4>BOOK WITH US</h4>
-                    <p>GOOD TO GO? YOU PAY 2% OF THE ESTIMATED PROJECT COST AS THE BOOKING AMOUNT TO START THE HOUSE CONSTRUCTION.</p>
-                </div>
-            </div>
-            <div class="step" style="margin-left:600px">
-                <div class="step-image">
-                    <img src="matt_construction_cover 1.jpg" alt="Step 4 Image">
-                </div>
-                <div class="step-text">
-                    <h3>STEP-4</h3>
-                    <h4>INSTALLATIONS START</h4>
-                    <p>THE LAST AND FINAL STAGE. WE MAKE SURE YOU ARE WELL SETTLED IN YOUR NEWLY BUILT HOME. OUR JOURNEY TOGETHER DOESN'T END HERE. WE PROVIDE 10 YEARS OF WARRANTY.</p>
-                </div>
-            </div>
-
-            <div class="step">
-                <div class="step-image">
-                    <img src="contemporary-interior-design-ideas-for-your-home 1 (3).jpg" alt="Step 5 Image">
-                </div>
-                <di v class="step-text" style="margin-left:70px">
-                    <h3>STEP-5</h3>
-                    <h4>SETTLE-IN</h4>
-                    <p>The last and final stage. We make sure you are well settled in your newly built home. Our journey together doesn't end here. We provide 10 years of warranty.</p>
+                <div class="col-9">
+                    <h2>Portfolio</h2>
                 </div>
             </div>
         </div>
-    </section>
-
-
-    <section class="customer-section">
-        <div class="customer-title">
-            <h2>OUR CUSTOMERS</h2>
-        </div>
-        <div class="customer-review">
-            <div class="customer-photo">
-                <img src="elegant family rooms, our designs cater a personalized living room experience_ (2).jpg" alt="Room">
-                <div class="customer-avatar">
-                    <img src="Ellipse 339.jpg" alt="Emily">
-                </div>
-            </div>
-            <div class="customer-feedback">
-                <h3 > EMILY</h3>
-                <div class="customer-rating">
-                    <span class="star">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                    <span class="star">&#9734;</span>
-                </div>
-                <p>
-                    I Wanted To Take A Moment To Express My Sincere Appreciation For The Exceptional 
-                    Service I Received From Your Team Recently. I Am Truly Impressed By The Positive 
-                    Work And Wanted To Share My Feedback With You.
-                </p>
-            </div>
-        </div>
-        <div class="customer-pagination">
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
-    </section>
-
-    <section class="contact-section">
-        <div class="contact-container">
-            <div class="contact-left">
-                <h2>GET IN TOUCH <span>CONTACT</span></h2>
-                <form>
-                    <div class="input-row">
-                        <input type="text" placeholder="ENTER NAME">
-                        <input type="text" placeholder="CITY">
-                    </div>
-                    <div class="input-row">
-                        <input type="email" placeholder="EMAIL">
-                        <input type="tel" placeholder="PHONE NUMBER">
-                    </div>
-                    <textarea placeholder="MESSAGE"></textarea>
-                </form>
-            </div>
-            <div class="contact-right">
-                <h3 style="color: rgba(18, 54, 106, 1);
-">OUR ADDRESS</h3>
-                <p style="font-family: Kanit;
-                font-size: 22px;
-                font-weight: 700;
-                line-height: 35.88px;
-                text-align: left;
-                color: rgb(26, 26, 26);
-">Fabigence India Pvt.Ltd</p>
-                <p style="font-family: Nokora;
-                font-size: 14px;
-                font-weight: 700;
-                line-height: 21.15px;
-                text-align: left;
-                color:rgba(71, 71, 71, 1);
-
-                ">Plot 126 Mahalaxmi Towers</p>
-                <p style="font-family: Nokora;
-                font-size: 14px;
-                font-weight: 700;
-                line-height: 21.15px;
-                text-align: left;
-                color:rgba(71, 71, 71, 1);
-                ">Srinagar Colony, Panjagutta</p>
-                <p style="font-family: Nokora;
-                font-size: 14px;
-                font-weight: 700;
-                line-height: 21.15px;
-                text-align: left;
-                color:rgba(71, 71, 71, 1);
-                ">Hyderabad - 500073</p>
-                <p style="font-family: Nokora;
-                font-size: 14px;
-                font-weight: 700;
-                line-height: 21.15px;
-                text-align: left;
-                color:rgba(71, 71, 71, 1);
-                ">Telangana</p>
-            </div>
-        </div>
-    </section>
-    <div class="image-container">
-        <img src="googl_ED 1.jpg" alt="Image Description">
     </div>
-
-   <div style="display: flex; justify-content: flex-end; gap:50px; margin-right: 80px;">
-    <img src="Vector.jpg" alt="">
-    <img src="fe_instagram.jpg" alt="">
-    <img src="grommet-icons_facebook-option.jpg" alt="">
-    <img src="foundation_social-linkedin.jpg" alt="">
-   </div>
-
-
-
-    <footer class="footer-section">
-        <div class="footer-container">
-            <ul class="footer-nav">
-                <li><a href="#">SERVICES</a></li>
-                <li><a href="#">PORTFOLIO</a></li>
-                <li><a href="#">EXPERTISE</a></li>
-                <li><a href="#">GALLERY</a></li>
-                <li><a href="#">ABOUT US</a></li>
+    <div>
+        <div class="container">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                        aria-selected="true">Home</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                        aria-selected="false">Profile</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                        aria-selected="false">Contact</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled"
+                        aria-selected="false">Disabled</button>
+                </li>
             </ul>
-            <div class="footer-social">
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                    tabindex="0">
+                    <div class="container">
+                        <!-- Gallery -->
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+                                    class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
+                                    class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape" />
+                            </div>
+
+                            <div class="col-lg-4 mb-4 mb-lg-0">
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
+                                    class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds" />
+
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+                                    class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+                            </div>
+
+                            <div class="col-lg-4 mb-4 mb-lg-0">
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
+                                    class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
+
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
+                                    class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park" />
+                            </div>
+                        </div>
+                        <!-- Gallery -->
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                    tabindex="0">
+                    <!-- Gallery -->
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+                                class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
+                                class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape" />
+                        </div>
+
+                        <div class="col-lg-4 mb-4 mb-lg-0">
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
+                                class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds" />
+
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+                                class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+                        </div>
+
+                        <div class="col-lg-4 mb-4 mb-lg-0">
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
+                                class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
+
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
+                                class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park" />
+                        </div>
+                    </div>
+                    <!-- Gallery -->
+                </div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                    tabindex="0">2</div>
+                <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab"
+                    tabindex="0">3</div>
             </div>
-            <p class="footer-copy">COPYRIGHT 2024 UNIQFRAME CREATION PVT.LTD</p>
         </div>
+    </div>
+    <div class="contaner-fluid bg-col-blue">
+        <div class="row">
+            <div class="col-3">
+                <p class="text-end">
+                    Interesting Facts
+                </p>
+            </div>
+            <div class="col-9">
+                <h1>Success</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        <h1>24</h1>
+                    </div>
+                    <div class="col">
+                        <h3>
+                            Experience
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        <h1>323</h1>
+                    </div>
+                    <div class="col">
+                        <h3>
+                            Projects
+                        </h3>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        <h1>15</h1>
+                    </div>
+                    <div class="col">
+                        <h3>
+                            On Going projects
+                        </h3>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="text-end">43</h1>
+                    </div>
+                    <div class="col">
+                        <h3 class="text-start">
+                            Partners
+                        </h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="section-6 py-3 bg-col-grey">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-9">
+                    <p class="text-end">Our Team</p>
+                </div>
+                <div class="col-3">
+                    <h2>Expertise</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-7 ">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img class="" src="./img/ourteam-1.svg" alt="">
+                </div>
+                <div class="col my-auto">
+                    <h5>Meet our team in person and experience the difference they can make in bringing your vision to
+                        life. We're here to turn your dreams into reality with passion, professionalism, and expertise
+                    </h5>
+                    <a href="">see more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-8 py-3 bg-col-grey">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <p class="text-end">How it works</p>
+                </div>
+                <div class="col">
+                    <h2>Process</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-9 ">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 text-end">
+                    <img src="./img/Step-1.svg" alt="">
+                </div>
+                <div class="col-9">
+                    <h5>step-1</h5>
+                    <h2>Raise a request</h2>
+                    <p>Raise a house construction service request or call us at +91 7505 205 205. Our team will get in
+                        touch with you to understand your requirements in more detail.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 text-end">
+                    <img class="" src="./img/Step-1.svg" alt="">
+                </div>
+                <div class="col-6">
+                    <h5>step-2</h5>
+                    <h2>Raise a request</h2>
+                    <p>Raise a house construction service request or call us at +91 7505 205 205. Our team will get in
+                        touch with you to understand your requirements in more detail.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 text-end">
+                    <img src="./img/Step-1.svg" alt="">
+                </div>
+                <div class="col-9">
+                    <h5>step-3</h5>
+                    <h2>Raise a request</h2>
+                    <p>Raise a house construction service request or call us at +91 7505 205 205. Our team will get in
+                        touch with you to understand your requirements in more detail.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 text-end">
+                    <img class="" src="./img/Step-1.svg" alt="">
+                </div>
+                <div class="col-6">
+                    <h5>step-4</h5>
+                    <h2>Raise a request</h2>
+                    <p>Raise a house construction service request or call us at +91 7505 205 205. Our team will get in
+                        touch with you to understand your requirements in more detail.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 text-end">
+                    <img src="./img/Step-1.svg" alt="">
+                </div>
+                <div class="col-9">
+                    <h5>step-5</h5>
+                    <h2>Raise a request</h2>
+                    <p>Raise a house construction service request or call us at +91 7505 205 205. Our team will get in
+                        touch with you to understand your requirements in more detail.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-10 py-3 bg-col-grey">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <p class="text-end">Get in touch</p>
+                </div>
+                <div class="col">
+                    <h2>Contact</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-11 my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-9">
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control my-2" placeholder="First name"
+                                aria-label="First name">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control my-2" placeholder="City" aria-label="Last name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control my-2" placeholder="Email" aria-label="First name">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control my-2" placeholder="Phone Number"
+                                aria-label="Last name">
+                        </div>
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control my-2" placeholder="Leave a comment here" id="floatingTextarea2"
+                            style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Comments</label>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <h2>
+                        Our Address
+                    </h2>
+                    <p>
+                        I wanted to take a moment to express my sincere appreciation for the exceptional service I
+                        received from your team recently. I am truly impressed by the positive work and wanted to share
+                        my feedback with you.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="section-12">
+        <div class="container my-4">
+            <iframe class="ratio ratio-4x3"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d60876.30843693219!2d78.38108469597032!3d17.518523890442392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1725206610728!5m2!1sen!2sin"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    </div>
+    <footer class="text-center bg-body-tertiary">
+        <!-- Grid container -->
+        <div class="container pt-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+                <!-- Github -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(54, 33, 177, 0.151);">
+            © 2024 Copyright:
+            <a class="text-body" href="#">UniqFrameDesign Studio</a>
+        </div>
+        <!-- Copyright -->
     </footer>
 
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="script.js"></script>
-  </body>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
