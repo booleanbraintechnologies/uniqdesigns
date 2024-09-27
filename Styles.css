@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Nokora:wght@100;300;400;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+html body {
+  font-family: "Nokora", sans-serif;
+}
+body {
+  margin: 0;
+}
+
+.font-bold-15 {
+  font-size: 15px;
+  font-family: "Nokora", sans-serif;
+  font-weight: 700;
+  
+}
+.font-black-40 {
+  font-size: 40px;
+  font-family: "Nokora", sans-serif;
+  font-weight: 900;
+  
+}
+.font-regular-15 {
+  font-size: 15px;
+  font-family: "Nokora", sans-serif;
+  font-weight: 400;
+  
+}
+.font-black-25 {
+  font-size: 25px;
+  font-family: "Nokora", sans-serif;
+  font-weight: 700;
+  
+}
+.font-black-20 {
+  font-size: 20px;
+  font-family: "Nokora", sans-serif;
+  font-weight: 700;
+  
+}
+.bg-primary-col {
+  background-color: #12366a;
+  color: #fff;
+}
+.font-col-lblue {
+  color: #85bdd7;
+}
+.font-col-grey {
+  color: #8c949a;
+}
+.border-20 {
+  border-radius: 4px;
+}
+
+.section-2,
+.section-7 {
+  margin-top: 40px;
+}
+.bg-col-grey {
+  background-color: #eaecf2;
+}
+.bg-col-blue {
+  background-color: #12366a;
+  color: #fff;
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 500px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #12366a;
+  color: white;
+  transform: rotateY(180deg);
+}
