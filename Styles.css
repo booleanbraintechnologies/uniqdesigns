@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nokora:wght@100;300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Great+Vibes&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   margin: 0;
@@ -17,36 +20,54 @@ html body {
 body {
   margin: 0;
 }
-
+.great-vibes-45 {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 45px;
+}
+.archivo-black-25 {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 10px;
+}
+.archivo-black-regular {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.raleway-light-15 {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 15px;
+}
 .font-bold-15 {
   font-size: 15px;
   font-family: "Nokora", sans-serif;
   font-weight: 700;
-  
 }
 .font-black-40 {
   font-size: 40px;
   font-family: "Nokora", sans-serif;
   font-weight: 900;
-  
 }
 .font-regular-15 {
   font-size: 15px;
   font-family: "Nokora", sans-serif;
   font-weight: 400;
-  
 }
 .font-black-25 {
   font-size: 25px;
   font-family: "Nokora", sans-serif;
   font-weight: 700;
-  
 }
 .font-black-20 {
   font-size: 20px;
   font-family: "Nokora", sans-serif;
   font-weight: 700;
-  
 }
 .bg-primary-col {
   background-color: #12366a;
@@ -75,9 +96,9 @@ body {
 }
 .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 500px;
-  perspective: 1000px;
+  width: 200px;
+  height: 300px;
+  perspective: 800px;
 }
 
 .flip-card-inner {
@@ -112,4 +133,79 @@ body {
   background-color: #12366a;
   color: white;
   transform: rotateY(180deg);
+}
+.sticky-bot {
+  position: fixed;
+  bottom: 100px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+.sticky-bot i {
+  font-size: 29px;
+  color: #f2ede7 !important;
+}
+.whatsapp {
+  background-color: #25d366 !important;
+  left: auto;
+  right: 18px;
+  bottom: 20px;
+  text-decoration: none;
+}
+.whatsapp i {
+  color: #fff !important;
+}
+
+.nav-link {
+  color: #115171;
+}
+
+.background-img {
+  background-image: url("./img/Wireframe\ -\ 2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.overlay {
+
+  
+  
+  
+  background-color: rgb(207, 19, 19);
+  z-index: -1;
+}
+.card {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.img-size {
+  position: relative;
+}
+.card-text {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  color: #e7e7e7;
+  z-index: 1;
+  font-family: "Nokora", sans-serif;
+  text-transform: uppercase;
+}
+.card::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.39);
+}
+.card :hover {
+  opacity: 1;
 }
